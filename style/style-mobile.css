@@ -41,8 +41,9 @@ header {
     overflow: hidden;
     position: fixed;
     padding: 0.5rem;
-    top: 0rem;
+    top: 0;
     width: 100%;
+    z-index: 10;
 }
 
 header .icon {
@@ -83,8 +84,10 @@ nav .selected {
 }
 
 .navbar {
+    background-color: rgba(231,187,65,0.6);
     border-radius: 1rem;
-    height: 3.125rem;
+    height: 3.5rem;
+    box-shadow: var(--m3-dark1);
 }
 
 .navbar a:hover {
@@ -155,10 +158,10 @@ h1 {
 
 .top {
     padding-top: 5rem;
+    padding-bottom: 2rem;
     margin-bottom: 3rem;
     border-radius: 0 0 5rem 0;
     background-color: var(--yellow);
-    box-shadow: var(--m3-dark3);
 }
 
 .landing p {
@@ -220,22 +223,32 @@ h1 {
 .card {
     background-color: white;
     border-radius: 3rem;
-    height: 15rem;
+    height: 27rem;
     width: 100%;
     margin: 1.5rem 1.5rem 1.5rem 0;
     box-shadow: var(--m3-dark3);
 }
 
 .card .item {
-    width: 16rem;
+    width: 17rem;
     height: fit-content;
     word-wrap: break-word;
 }
 
-.card p {
+.card .item p, h3 {
     text-align: left;
     white-space: normal;
-    padding: 0.7rem 1rem;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+
+.card .item a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.card .item a:hover {
+    font-size: 1.02rem;
 }
 
 .badge {
@@ -249,13 +262,34 @@ h1 {
 
 .card .badge {
     position: relative;
-
 }
 
-.card .badge h3 {
+.card .badge p {
     text-align: center;
     align-self: center;
-    padding-bottom: 0.8rem;
+}
+
+.references h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.references ol {
+    margin-left: 1rem;
+}
+
+.references ol li {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.references a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.references a:hover {
+    font-size: 0.75rem;
 }
 
 /* Footer */
@@ -263,7 +297,6 @@ footer {
     margin-top: 5rem;
     border-radius: 5rem 0 0 0;
     background-color: var(--yellow);
-    box-shadow: var(--m3-dark3);
     padding: 2rem;
 }
 
