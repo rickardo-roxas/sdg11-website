@@ -1,1 +1,277 @@
 /* Temporary stylesheet. To integrate with style.css */
+@font-face {
+    font-family: 'Inter';
+    src: url(style/font/Inter/Inter-VariableFont_opsz,wght.ttf);
+}
+
+:root {
+    --yellow: rgba(231,187,65,1);
+    --gray: rgba(57,62,65,1);
+    --blue: rgba(25,159,228,1);
+    --red: rgba(222,60,75,1);
+    --m3-dark1: 0 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.30);
+    --m3-dark3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+    --m3-dark5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--blue);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* Header */
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    padding: 0.5rem;
+    top: 0rem;
+    width: 100%;
+}
+
+header .icon {
+    width: 1.8rem;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+nav li {
+    font-weight: 600;
+    list-style: none;
+    display: inline-block;
+    margin: 0.8rem;
+}
+
+nav a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--yellow);
+    box-shadow: var(--m3-dark3);
+}
+
+nav .selected {
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--yellow);
+    box-shadow: var(--m3-dark1);
+}
+
+.navbar {
+    border-radius: 1rem;
+    height: 3.125rem;
+}
+
+.navbar a:hover {
+    .icon {
+        width: 2rem;
+        height: auto;
+        margin-left: 1rem;
+    }
+}
+
+/* Main */
+
+/* Element Styling */
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-round {
+    border-radius: 1.5625rem;
+    padding: 1.125rem 2rem;
+    border: none;
+}
+
+.btn-round:hover {
+    cursor: pointer;
+}
+
+.txt-black {
+    color: black;
+}
+
+.txt-white {
+    color: white;
+}
+
+.right {
+    right: 0;
+}
+
+/* Index Page */
+
+/* Section Styling */
+.landing {
+    align-items: center;
+    align-self: center;
+    margin-top: 2rem;
+    padding: 0 12% 0 12%;
+}
+
+.landing h1 {
+    padding-bottom: 0.7rem;
+}
+
+.top {
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 0 0 5rem 0;
+    background-color: var(--yellow);
+    box-shadow: var(--m3-dark3);
+}
+
+.landing p {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.5rem */
+    letter-spacing: -0.025rem;
+}
+
+.landing .icon {
+    width: 20rem;
+    height: auto;
+}
+
+.top .btn-round {
+    display: inline-flex;
+    height: 3.5625rem;
+    padding: 1.125rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: -1.625rem;
+    flex-shrink: 0;
+    background-color: var(--red);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.top .btn-round:hover {
+    box-shadow: var(--m3-dark5);
+}
+
+.btn-round .icon {
+    padding-left: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.top .right {
+    position: relative;
+    left: 50%;
+}
+
+/* Targets */
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: normal;
+    padding: 0 12%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 3rem;
+    height: 15rem;
+    width: 100%;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    box-shadow: var(--m3-dark3);
+}
+
+.card .item {
+    width: 16rem;
+    height: fit-content;
+    word-wrap: break-word;
+}
+
+.card p {
+    text-align: left;
+    white-space: normal;
+    padding: 0.7rem 1rem;
+}
+
+.badge {
+    box-shadow: var(--m3-dark3);
+    background-color: var(--yellow);
+    border-radius: 3rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+}
+
+.card .badge {
+    position: relative;
+
+}
+
+.card .badge h3 {
+    text-align: center;
+    align-self: center;
+    padding-bottom: 0.8rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    border-radius: 5rem 0 0 0;
+    background-color: var(--yellow);
+    box-shadow: var(--m3-dark3);
+    padding: 2rem;
+}
+
+footer p {
+    font-family: 'Inter',sans-serif;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.875rem;
+    text-align: center;
+}
