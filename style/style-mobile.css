@@ -211,6 +211,10 @@ h1 {
     left: 50%;
 }
 
+.top a {
+    text-decoration: none;
+}
+
 /* Targets */
 .scrolling-wrapper {
     -webkit-overflow-scrolling: touch;
