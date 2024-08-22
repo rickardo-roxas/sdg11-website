@@ -90,12 +90,10 @@ nav .selected {
     box-shadow: var(--m3-dark1);
 }
 
-.navbar a:hover {
-    .icon {
-        width: 2rem;
-        height: auto;
-        margin-left: 1rem;
-    }
+.navbar a .icon:hover {
+    width: 2rem;
+    height: auto;
+    margin-left: 1rem;
 }
 
 /* Main */
@@ -185,7 +183,6 @@ h1 {
     padding: 1.125rem 2rem;
     justify-content: center;
     align-items: center;
-    gap: -1.625rem;
     flex-shrink: 0;
     background-color: var(--red);
     font-family: 'Inter', sans-serif;
