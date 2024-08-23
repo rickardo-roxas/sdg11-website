@@ -10,8 +10,11 @@
 
 :root {
     --yellow: rgba(231,187,65,1);
+    --light-gray: rgba(92, 103, 125, 1);
     --gray: rgba(57,62,65,1);
+    --black: rgba(30, 30, 30, 1);
     --blue: rgba(25,159,228,1);
+    --dark-blue: rgba(51, 102, 153, 1);
     --red: rgba(222,60,75,1);
     --m3-dark1: 0 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.30);
     --m3-dark3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
@@ -28,7 +31,7 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--blue);
+    background-color: rgba(234, 229, 229, 1);
 }
 
 .container {
@@ -37,14 +40,16 @@ html {
     justify-content: left;
 }
 
+.padded {
+    padding: 3% 6%;
+}
+
 /* Header */
 header {
     align-items: center;
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
     position: fixed;
-    padding: 0.5rem;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -89,8 +94,8 @@ nav .selected {
 
 .navbar {
     background-color: rgba(231,187,65,0.6);
-    border-radius: 1rem;
     height: 3.5rem;
+    padding: 2rem;
     box-shadow: var(--m3-dark1);
 }
 
@@ -100,7 +105,70 @@ nav .selected {
     margin-left: 1rem;
 }
 
-/* Body */
+/* Main */
+
+/* Element Styling */
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-round {
+    border-radius: 1.5625rem;
+    padding: 1.125rem 2rem;
+    border: none;
+}
+
+.btn-round:hover {
+    cursor: pointer;
+}
+
+.txt-black {
+    color: var(--black);
+}
+
+.txt-white {
+    color: white;
+}
+
+.right {
+    right: 0;
+}
+
+/* Index Page */
+
+/* Articles Page */
+.articles-nav {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles-nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.articles-nav li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
 
 /* References */
 .references h2 {
@@ -129,8 +197,6 @@ nav .selected {
 /* Footer */
 footer {
     margin-top: 5rem;
-    border-radius: 5rem 0 0 0;
-    background-color: var(--yellow);
     padding: 2rem;
 }
 
@@ -138,7 +204,7 @@ footer p {
     font-family: 'Inter',sans-serif;
     font-size: 0.8rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 0.875rem;
     text-align: center;
 }
