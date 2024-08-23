@@ -1,7 +1,7 @@
 /* Temporary stylesheet. To integrate with style.css */
 @font-face {
     font-family: 'Inter';
-    src: url(style/font/Inter/Inter-VariableFont_opsz,wght.ttf);
+    src: url(../style/font/Inter/Inter-VariableFont_opsz,wght.ttf);
 }
 
 :root {
