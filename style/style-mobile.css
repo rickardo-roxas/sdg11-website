@@ -212,6 +212,57 @@ h1 {
     text-decoration: none;
 }
 
+/* About Us */
+.container-devs{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 2rem;
+
+    /*For monitoring purposes
+    border-color: black;
+    border-style: solid;
+    */
+    
+}
+
+.developer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+.developer p{
+    align-content: center;
+    text-align: left;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    flex: 1;
+
+    /* Monitoring 
+    border-color: black;
+    border-style: solid;
+    */
+}
+
+.developer img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    padding: 0.3rem;
+}
+
 /* Targets */
 .scrolling-wrapper {
     -webkit-overflow-scrolling: touch;
