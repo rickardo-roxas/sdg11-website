@@ -310,7 +310,7 @@ h1 {
     word-wrap: break-word;
 }
 
-.card .item p, h3 {
+.card .item p, .card .item h3 {
     text-align: left;
     white-space: normal;
     padding: 0.3rem 1rem;
