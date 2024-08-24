@@ -230,6 +230,23 @@ h1 {
     
 }
 
+.container-devs a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-devs a:visited{
+    color: inherit;
+}
+
+.container-devs a:hover{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem; 
+    color: var(--yellow);
+    box-shadow: var(--m3-dark3);
+}
+
 .developer{
     display: flex;
     flex-direction: row;
@@ -242,12 +259,13 @@ h1 {
     margin: 1rem;
 }
 
-.developer p{
+.developer .name{
     align-content: center;
     text-align: left;
     margin: 0;
     font-family: 'Inter', sans-serif;
     flex: 1;
+    text-decoration: none;
 
     /* Monitoring 
     border-color: black;
@@ -255,9 +273,14 @@ h1 {
     */
 }
 
+.developer .description{
+    display: none;
+}
+
 .developer img{
     width: 4rem;
     height: 4rem;
+    object-fit: cover;
     border-radius: 1rem;
     margin-right: 1rem;
     padding: 0.3rem;
