@@ -239,6 +239,14 @@ h1 {
     color: inherit;
 }
 
+.container-devs a:hover{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem; 
+    color: var(--yellow);
+    box-shadow: var(--m3-dark3);
+}
+
 .developer{
     display: flex;
     flex-direction: row;
