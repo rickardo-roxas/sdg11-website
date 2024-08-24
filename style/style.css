@@ -47,7 +47,6 @@ html {
 /* Header */
 header {
     align-items: center;
-    justify-content: space-between;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -56,9 +55,8 @@ header {
 }
 
 header .icon {
-    width: 1.8rem;
+    width: 2.4rem;
     height: auto;
-    margin-left: 1rem;
     margin-right: 1rem;
 }
 
@@ -73,27 +71,28 @@ nav a {
     font-family: 'Inter', sans-serif;
     font-size: 0.8rem;
     text-decoration: none;
-    color: white;
+    color: var(--black);
 }
 
 nav a:hover {
-    background-color: white;
-    padding: 0.8rem;
-    border-radius: 1rem;
-    color: var(--yellow);
+    background-color: var(--light-gray);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    color: white;
     box-shadow: var(--m3-dark3);
 }
 
 nav .selected {
-    background-color: white;
-    padding: 0.8rem;
-    border-radius: 1rem;
-    color: var(--yellow);
+    background-color: var(--light-gray);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
     box-shadow: var(--m3-dark1);
 }
 
 .navbar {
-    background-color: rgba(231,187,65,0.6);
+    justify-content: space-between;
+    background-color: rgba(234, 229, 229, 1);
     height: 3.5rem;
     padding: 2rem;
     box-shadow: var(--m3-dark1);
@@ -149,10 +148,24 @@ h1 {
     right: 0;
 }
 
+.card {
+    background-color: white;
+    border-radius: 1.2rem;
+    box-shadow: var(--m3-dark3);
+    padding: 0.8rem 3.2rem;
+}
+
+.card .item {
+    text-align: left;
+    white-space: normal;
+}
+
 /* Index Page */
 
 /* Articles Page */
 .articles-nav {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -166,6 +179,7 @@ h1 {
 }
 
 .articles-nav li a {
+    text-align: left;
     text-decoration: none;
     color: var(--dark-blue);
 }
