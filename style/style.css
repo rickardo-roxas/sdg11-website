@@ -350,9 +350,11 @@ article {
 }
 
 #info-ph .card p {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 0.5rem;
     margin-right: -2.4rem;
+    color: var(--black);
 }
 
 #info-ph .card .read p {
@@ -362,6 +364,28 @@ article {
 
 #info-ph .icon {
     width: 3rem;
+}
+
+#info-ph .card .read {
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+}
+
+#info-ph .card .read p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+#info-ph .icon {
+    width: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 /* References */
