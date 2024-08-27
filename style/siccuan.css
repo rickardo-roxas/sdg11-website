@@ -404,6 +404,7 @@ footer p {
 }
 
 /* Research and Publication */
+/* --------------------------------------------- */
 #pubs {
     padding: 5rem;
 }
@@ -460,7 +461,7 @@ footer p {
     justify-content: space-between;
     gap: .5rem;
 }
-/* End of Pubs section */
+/* ----------------------------------------------- */
 
 
 /* Media Queries */
