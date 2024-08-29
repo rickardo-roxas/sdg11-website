@@ -126,11 +126,6 @@ nav .selected {
     cursor: pointer;
 }
 /* Main */
-main{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
 
 /* Element Styling */
 a {
@@ -522,78 +517,6 @@ article {
 #references a:hover {
     font-size: 0.75rem;
 }
-
-
-/* About Us */
-.container-devs{
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    margin: 5rem;
-    max-width: 75%;
-}
-
-.container-devs a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.container-devs a:visited{
-    color: inherit;
-}
-
-.container-devs a:hover{
-    background-color: white;
-    border-radius: 1rem;
-    margin: 1rem;
-    box-shadow: var(--m3-dark3);
-}
-
-.container-devs a:hover .name {
-    color: var(--yellow); 
-}
-
-
-.developer{
-    flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 15rem;
-    height: 25rem;
-    margin: 1rem;
-    box-sizing: border-box;
-}
-
-
-.developer img{
-    width: 15rem;
-    height: 15rem;
-    object-fit: cover;
-    border-radius: 1rem;
-    box-shadow: var(--m3-dark3);
-}
-
-.developer .name{
-    width: 100%;
-    font-weight: bolder;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    font-family: 'Inter', sans-serif;
-}
-
-.developer .description {
-    width: 100%;
-    text-align: left;
-    flex: 1; 
-    font-family: 'Inter', sans-serif;
-}
-
-
 
 /* Footer */
 footer {
