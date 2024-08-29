@@ -54,6 +54,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
+    box-shadow: var(--m3-dark1);
 }
 
 header .icon {
@@ -125,6 +126,7 @@ nav .selected {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
 /* Main */
 
 
@@ -202,7 +204,76 @@ article {
     white-space: normal;
 }
 
+.blue-bg {
+    background-color: var(--dark-blue);
+}
+
 /* Index Page */
+.top {
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 0 0 5rem 0;
+}
+
+.landing {
+    margin-top: 2rem;
+}
+
+.landing h2 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.slideshow {
+    margin-top: 6rem;
+    overflow: hidden;
+    height: 40rem;
+}
+
+.slideshow .slide-wrapper {
+    margin-left: 5rem;
+    width: 120rem;
+    -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+    float: left;
+    margin-right: 0.5rem;
+    height: auto;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.7rem;
+}
+
+@-webkit-keyframes slide {
+    20% {margin-left: 0;}
+    30% {margin-left: -30%;}
+    50% {margin-left: -50%;}
+    60% {margin-left: -60%;}
+    70% {margin-left: -70%;}
+    80% {margin-left: -80%;}
+    90% {margin-left: -90%;}
+}
+
+.landing .btn-round {
+    margin-top: 1rem;
+    font-weight: 600;
+    height: 3rem;
+    width: 10rem;
+}
+
+.landing .btn-round a:hover {
+    box-shadow: var(--m3-dark5);
+}
+
+.sdg h4 {
+    margin-bottom: 1rem;
+    color: var(--blue);
+}
 
 /* Articles Page */
 .articles-nav {
@@ -259,11 +330,11 @@ article {
 
 /* Info Section */
 #info .btn-round {
-    height: 3rem;
     width: 20rem;
 }
 
 #info .img {
+    border-radius: 0.7rem;
     width: 40rem;
     height: auto;
 }
@@ -283,58 +354,77 @@ article {
     width: 40rem;
 }
 
-#info p, #info h3, #info h2, #info a {
+#info p, #info h3, #info h2 {
     margin: 1rem 2rem;
     text-align: left;
     white-space: normal;
 }
 
+#info a sub {
+    margin-left: 0.1rem;
+}
+
+#info a sub:hover {
+    font-size: 0.8rem;
+}
+
+#info h2 {
+    display: none;
+}
+
+#info h3 {
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+
 #info .targets h3 {
-    margin-top: 10rem;
+    font-size: 1rem;
+}
+
+#info .other-info {
+    font-size: 2rem;
+}
+
+#info .targets .card {
+    background-color: white;
+    border-radius: 3rem;
+    width: 30rem;
+    height: 30rem;
+    margin: 1.5rem 1.5rem 1.5rem 0;
+    box-shadow: var(--m3-dark3);
+}
+
+#info .targets .item {
+    width: 20rem;
+}
+
+#info .targets .card .item p {
+    margin: 1.2rem -2rem;
+    font-size: 1rem;
+}
+
+#info .targets .card .item a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin: 0;
+    font-size: 1rem;
+}
+
+#info .targets .card .item h4 {
+    font-size: 1.5rem;
+    margin: 1rem -2rem;
+}
+
+#info .targets .card .item a:hover {
+    font-size: 1.1rem;
 }
 
 #info .btn-round p {
     font-weight: 600;
 }
 
-#info .card {
-    background-color: white;
-    border-radius: 1.5rem;
-    height: 27rem;
-    width: 100%;
-    margin: 1.5rem 1.5rem 1.5rem 0;
-    box-shadow: var(--m3-dark3);
-}
-
-#info .card .item {
-    width: 17rem;
-    height: fit-content;
-    word-wrap: break-word
-}
-
-#info .badge {
-    box-shadow: var(--m3-dark3);
-    background-color: var(--dark-blue);
-    border-radius: 3rem;
-    width: 3rem;
-    height: 3rem;
-    padding: 1rem;
-}
-
-#info .card .badge p {
-    text-align: center;
-    align-self: center;
-}
-
-#info .card .badge {
-    position: relative;
-}
-
-#info .card .item p, #info .card .item h3 {
-    text-align: left;
-    white-space: normal;
-    padding: 0.3rem 1rem;
-    font-size: 1rem;
+#info .gallery {
+    height: 40rem;
 }
 
 /* Info-PH Section */
@@ -497,6 +587,11 @@ article {
 
 /* References */
 #references h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+#references h3 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -511,8 +606,9 @@ article {
 }
 
 #references a {
+    font-size: 0.7rem;
     text-decoration: none;
-    color: var(--dark-blue);
+    color: var(--yellow);
 }
 
 #references a:hover {
@@ -623,7 +719,6 @@ article {
 
 /* Footer */
 footer {
-    margin-top: 5rem;
     padding: 2rem;
 }
 
