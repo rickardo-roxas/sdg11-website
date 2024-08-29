@@ -549,8 +549,13 @@ article {
     background-color: white;
     border-radius: 1rem;
     margin: 1rem;
-    box-shadow: 1rem;
+    box-shadow: var(--m3-dark3);
 }
+
+.container-devs a:hover .name {
+    color: var(--yellow); 
+}
+
 
 .developer{
     flex: 1 1 30%;
