@@ -562,18 +562,10 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: auto;
-    max-height: auto;
     width: 15rem;
     height: 25rem;
     margin: 1rem;
-
-
-    /*
-    border-style: solid;
-    border-color: red;
-    */
-    
+    box-sizing: border-box;
 }
 
 
@@ -582,6 +574,7 @@ article {
     height: 15rem;
     object-fit: cover;
     border-radius: 1rem;
+    box-shadow: var(--m3-dark3);
 }
 
 .developer .name{
