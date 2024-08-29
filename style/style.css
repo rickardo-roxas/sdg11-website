@@ -126,11 +126,7 @@ nav .selected {
     cursor: pointer;
 }
 /* Main */
-main{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
+
 
 /* Element Styling */
 a {
@@ -525,6 +521,34 @@ article {
 
 
 /* About Us */
+.about-us{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+.main-description{
+    margin-top: 5rem;
+    max-width: 75%;
+}
+
+.main-description h1{
+    font-family: 'Inter', sans-serif; 
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-description p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.6rem;
+    letter-spacing: -0.03rem;
+}
+
 .container-devs{
     display: flex;
     flex: 1;
@@ -532,7 +556,7 @@ article {
     justify-content: center;
     align-items: stretch;
     flex-direction: row;
-    margin: 5rem;
+    margin: 2rem;
     max-width: 75%;
 }
 
@@ -590,7 +614,9 @@ article {
     width: 100%;
     text-align: left;
     flex: 1; 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6rem;
+    letter-spacing: -0.03rem;
 }
 
 
