@@ -399,7 +399,7 @@ article {
 
 #info .targets .content {
     width: 20rem;
-    margin-top: -2.25rem;
+    margin-top: -1.5rem;
     margin-left: -.25rem;
     border-radius: 3rem;
     height: 30rem;
@@ -416,7 +416,8 @@ article {
 }
 
 .back {
-    margin-top: -20rem;
+    margin-top: -22rem;
+    border-radius: 3rem;
     background: white;
     transform: rotateY( 180deg );
   }
@@ -455,12 +456,11 @@ article {
 }
 
 
-
-
 #info .targets .content h4 {
-    margin-top: .5rem;
-    margin-bottom: 7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
     margin-left: 2.5rem;
+    font-size: 9.5rem;
 }
 
 #info .targets .card .content p {
