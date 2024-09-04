@@ -377,14 +377,6 @@ article {
     padding-top: 2rem;
 }
 
-.target-img {
-    margin: 0rem;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    width: 16rem;
-    height: 18rem;
-}
-
 #info .targets h3 {
     font-size: 1rem;
 }
@@ -394,51 +386,99 @@ article {
 }
 
 #info .targets .card {
-    background-color: white;
+    background:none;
+    box-shadow: none;
+    border: 0rem;
     border-radius: 3rem;
-    width: 30rem;
+    width: 20rem;
     height: 30rem;
-    margin: 1.5rem 1.5rem 1.5rem 0;
-    box-shadow: var(--m3-dark3);
-    justify-content: center; 
-    align-items: center;
-    flex-direction: column; 
+    display: grid;
+    place-items: center;
 }
+
+
+#info .targets .content {
+    width: 20rem;
+    margin-top: -2.25rem;
+    margin-left: -.25rem;
+    border-radius: 3rem;
+    height: 30rem;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+
+
+.front, .back {
+    backface-visibility: hidden;
+}
+
+.back {
+    margin-top: -20rem;
+    background: white;
+    transform: rotateY( 180deg );
+  }
+
+
+.card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
 
 #info .targets .card .ball {
-    background-color: blueviolet;
-    border-radius: 2rem;
-    width: 6rem;
-    height: 4rem;
+    background-color: var(--dark-blue);
+    border-radius: 1.5rem; 
+    width: 5rem;
+    height: 3rem;
     box-shadow: var(--m3-dark3);
-
+    text-align: center;
+    padding-top: 1rem;
+    z-index: 2;
 }
 
-#info .targets .item {
-    width: 20rem;
+
+
+#info .targets .card h1 {
+    font-size: 1rem;
+    color:white;
 }
 
-#info .targets .item h4 {
-    margin-top: 4rem;
-    margin-left: 1rem;
+
+.target-img {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    width: 16rem;
+    height: 15rem;
 }
 
-#info .targets .card .item p {
+
+
+
+#info .targets .content h4 {
+    margin-top: .5rem;
+    margin-bottom: 7rem;
+    margin-left: 2.5rem;
+}
+
+#info .targets .card .content p {
     font-size: 1rem;
 }
 
-#info .targets .card .item a {
+#info .targets .card .content a {
     text-decoration: none;
     color: var(--dark-blue);
     margin: 0;
     font-size: 1rem;
 }
 
-#info .targets .card .item h4 {
+#info .targets .card .content h4 {
     font-size: 1.5rem;
 }
 
-#info .targets .card .item a:hover {
+#info .targets .card .content a:hover {
     font-size: 1.1rem;
 }
 
