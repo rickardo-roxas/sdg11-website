@@ -887,5 +887,66 @@ footer p {
         margin-right: 1rem;
         box-shadow: none;
     }
+
+    .navbar {
+            width: 100%;
+            max-width: 90%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            white-space: nowrap;
+        }
+
+        .navbar h1 {
+            display: none;
+            
+        }
+
+        .navbar a .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-left: 0;
+        }
+
+        nav .selected {
+            background-color: var(--yellow);
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            box-shadow: var(--yellow);
+        }
+
+        nav a:hover {
+            background-color: var(--yellow);
+            padding: 0.3rem;
+            border-radius: 0.5rem;
+            color: white;
+            box-shadow: var(--yellow);
+        }
+
+        nav ul {
+            padding: 0%;
+        }
+        nav a {
+            font-family: 'Inter', sans-serif, bold;
+            font-size: .7rem;
+            text-decoration: none;
+            color: var(--black);
+        }
+                
+        nav {
+            margin: 0 .2rem;
+            box-shadow: none;
+        }
+
+        
+.navbar a .icon:hover {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+
     
 }
