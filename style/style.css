@@ -193,7 +193,7 @@ article {
     background-color: white;
     border-radius: 0.7rem;
     box-shadow: var(--m3-dark1);
-    padding: 0.8rem 3.2rem;
+    padding: 0.3rem;
     margin: 0.8rem;
 }
 
@@ -377,6 +377,14 @@ article {
     padding-top: 2rem;
 }
 
+.target-img {
+    margin: 0rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 16rem;
+    height: 18rem;
+}
+
 #info .targets h3 {
     font-size: 1rem;
 }
@@ -392,14 +400,30 @@ article {
     height: 30rem;
     margin: 1.5rem 1.5rem 1.5rem 0;
     box-shadow: var(--m3-dark3);
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+#info .targets .card .ball {
+    background-color: blueviolet;
+    border-radius: 2rem;
+    width: 6rem;
+    height: 4rem;
+    box-shadow: var(--m3-dark3);
+
 }
 
 #info .targets .item {
     width: 20rem;
 }
 
+#info .targets .item h4 {
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
 #info .targets .card .item p {
-    margin: 1.2rem -2rem;
     font-size: 1rem;
 }
 
@@ -412,7 +436,6 @@ article {
 
 #info .targets .card .item h4 {
     font-size: 1.5rem;
-    margin: 1rem -2rem;
 }
 
 #info .targets .card .item a:hover {
