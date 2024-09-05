@@ -172,6 +172,10 @@ article {
     margin: 1rem 2rem;
 }
 
+sub {
+    color: var(--yellow);
+}
+
 .center {
     display: flex;
     align-items: center;
@@ -436,13 +440,6 @@ footer p {
 
     .sdg img {
         width: 85%;
-    }
-
-    /* Footer */
-    footer {
-        margin-top: 2rem;
-        background-color: var(--yellow);
-        border-radius: 5rem 0 0 0;
     }
 }
 
