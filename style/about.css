@@ -1,0 +1,178 @@
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-description{
+    margin-top: 5rem;
+    max-width: 75%;
+}
+
+.main-description h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-description p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: left;
+    line-height: 1.6rem;
+    letter-spacing: -0.03rem;
+    margin: 0 5rem;
+}
+
+.container-devs{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    max-width: 75%;
+}
+
+.container-devs a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-devs a:visited{
+    color: inherit;
+}
+
+.container-devs a:hover{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    box-shadow: var(--m3-dark3);
+}
+
+.container-devs a:hover .name {
+    color: var(--yellow);
+}
+
+
+.developer{
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 25rem;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+
+.developer img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: var(--m3-dark3);
+}
+
+.developer .name{
+    width: 100%;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+}
+
+.developer .description {
+    width: 100%;
+    text-align: left;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6rem;
+    letter-spacing: -0.03rem;
+}
+
+@media screen and (max-width: 768px) {
+    /* About Us */
+    .main-description p{
+        display: none;
+    }
+
+    .main-description h2{
+        margin-top: 2.5rem;
+        margin-bottom: 0rem;
+        color: white;
+    }
+
+    .container-devs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0rem;
+        max-width: 100%;
+    }
+
+    .container-devs a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .container-devs a:visited{
+        color: inherit;
+    }
+
+    .container-devs a:hover{
+        background-color: white;
+        border-radius: 1rem;
+        margin: 1rem;
+        color: var(--yellow);
+        box-shadow: var(--m3-dark3);
+    }
+
+    .developer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 20rem;
+        max-width: 100%;
+        height: 5rem;
+        border-radius: 1rem;
+        background-color: white;
+        margin: 1rem;
+        box-shadow: var(--m3-dark3);
+    }
+
+    .developer:hover{
+        box-shadow: none;
+    }
+
+    .developer .name{
+        align-content: center;
+        text-align: left;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        flex: 1;
+        text-decoration: none;
+        font-weight: normal;
+    }
+
+    .developer .description{
+        display: none;
+    }
+
+    .developer img{
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        box-shadow: none;
+    }
+}
