@@ -62,7 +62,6 @@ html {
     box-shadow: var(--m3-dark3);
 }
 
-
 .padded {
     padding: 3% 6%;
 }
@@ -241,12 +240,13 @@ article {
 }
 
 .landing h2 {
+    margin-top: -2rem;
     font-size: 4rem;
     font-weight: 800;
 }
 
 .slideshow {
-    margin-top: 6rem;
+    margin-top: 12rem;
     overflow: hidden;
     height: 40rem;
 }
@@ -280,8 +280,6 @@ article {
     90% {margin-left: -90%;}
 }
 
-
-
 .landing .btn-round {
     margin-top: 1rem;
     font-weight: 600;
@@ -296,6 +294,10 @@ article {
 .sdg h4 {
     margin-bottom: 1rem;
     color: var(--blue);
+}
+
+.sdg {
+    margin-bottom: 3.5rem;
 }
 
 /* Footer */
@@ -318,14 +320,9 @@ footer p {
         background-color: var(--blue);
     }
 
-    /* Navbar */
-    header {
-        width: 100%;
-    }
-
+    /* Header */
     .navbar {
         width: 100%;
-        max-width: 90%;
         height: 50px;
         display: flex;
         align-items: center;
@@ -338,6 +335,7 @@ footer p {
     }
 
     .navbar a .icon {
+        background-color: var(--yellow);
         width: 2.5rem;
         height: 2.5rem;
         margin-left: 0;
@@ -359,10 +357,6 @@ footer p {
         box-shadow: var(--yellow);
     }
 
-    nav ul {
-        padding: 0;
-    }
-
     nav a {
         font-family: 'Inter', sans-serif, bold;
         font-size: .7rem;
@@ -371,7 +365,7 @@ footer p {
     }
 
     nav {
-        margin: 0 .2rem;
+        margin: 0.2rem;
         box-shadow: none;
     }
 
@@ -380,7 +374,76 @@ footer p {
         height: 2.5rem;
     }
 
+    /* Index Page */
+    .landing {
+        padding-top: 5rem;
+    }
 
+    .landing .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing h2 {
+        font-size: 3.6rem;
+    }
+
+    .landing .btn-round {
+        margin-right: 13rem;
+    }
+
+    .slideshow {
+        position: relative;
+        margin-top: -3rem;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .slideshow .slide-wrapper {
+        width: 100%;
+        min-width: 500%;
+        -webkit-animation: slide 18s ease infinite;
+    }
+
+    .slideshow .container {
+        display: flex;
+    }
+
+    .slide {
+        float: left;
+        height: auto;
+        width: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    @-webkit-keyframes slide {
+        20% {margin-left: 0;}
+        30% {margin-left: -70%;}
+        50% {margin-left: -160%;}
+        60% {margin-left: -250%;}
+        70% {margin-left: -300%;}
+        80% {margin-left: -350%;}
+        90% {margin-left: -400%;}
+    }
+
+    .sdg {
+        margin-top: -2rem;
+    }
+
+    .sdg img {
+        width: 85%;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 2rem;
+        background-color: var(--yellow);
+        border-radius: 5rem 0 0 0;
+    }
 }
 
 
