@@ -103,9 +103,7 @@
     }
 
     .main-description h2{
-        margin-top: 2.5rem;
-        margin-bottom: 0rem;
-        color: white;
+        display: none; 
     }
 
     .container-devs{
@@ -128,11 +126,10 @@
     }
 
     .container-devs a:hover{
-        background-color: white;
-        border-radius: 1rem;
-        margin: 1rem;
-        color: var(--yellow);
-        box-shadow: var(--m3-dark3);
+        background-color: unset;
+        border-radius: unset;
+        margin: unset;
+        box-shadow: unset;
     }
 
     .developer{
@@ -150,7 +147,8 @@
     }
 
     .developer:hover{
-        box-shadow: none;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
     }
 
     .developer .name{
@@ -174,5 +172,6 @@
         border-radius: 1rem;
         margin-right: 1rem;
         box-shadow: none;
+        padding: 0.3rem;
     }
 }
