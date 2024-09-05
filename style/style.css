@@ -314,10 +314,11 @@ footer p {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    html {
+    .blue-bg {
         background-color: var(--blue);
     }
 
+    /* Navbar */
     header {
         width: 100%;
     }
@@ -361,6 +362,7 @@ footer p {
     nav ul {
         padding: 0;
     }
+
     nav a {
         font-family: 'Inter', sans-serif, bold;
         font-size: .7rem;
@@ -372,7 +374,6 @@ footer p {
         margin: 0 .2rem;
         box-shadow: none;
     }
-
 
     .navbar a .icon:hover {
         width: 2.5rem;
