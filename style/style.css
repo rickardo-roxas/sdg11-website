@@ -40,7 +40,7 @@ html {
 .container {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 .infographic-container {
@@ -217,7 +217,6 @@ sub {
     background-color: white;
     border-radius: 0.7rem;
     box-shadow: var(--m3-dark1);
-    padding: 0.3rem;
     margin: 0.8rem;
 }
 
@@ -333,7 +332,6 @@ footer p {
         background-color: white;
         white-space: nowrap;
     }
-
     .navbar h1 {
         display: none;
     }
@@ -441,6 +439,39 @@ footer p {
     .sdg img {
         width: 85%;
     }
+
+    
+    .infographic {
+        margin-left: 1rem;
+        margin-right: 0rem;
+        width: 20%;
+    }
+
+    .infographic:hover {
+        width: 70%;
+    }
+
+    .first:hover {
+        margin-left: 90%;
+        margin-right: 20%;
+    }
+
+    .second:hover {
+        margin-left:50%;
+        margin-right:20%;
+    }
+
+    .third:hover {
+        margin-left:20%;
+        margin-right:40%;
+    }
+
+    .fourth:hover {
+        margin-left: 20%;
+        margin-right: 90%;
+    }
+
+    
 }
 
 
