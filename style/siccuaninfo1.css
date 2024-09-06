@@ -50,7 +50,7 @@
     letter-spacing: -0.03rem;
 }
 
-/* Info Section */
+/* Info Section************************************************ */
 .sdg11{
     display: none;
 }
@@ -88,7 +88,7 @@
     font-weight: 600;
 }
 
-/* Info1 Section */
+/* Info1 Section****************************************** */
 #info1 h3 {
     font-size: 4rem;
     padding-top: 2rem;
@@ -233,6 +233,7 @@
 #info1 .gallery {
     height: 40rem;
 }
+/* ***************************************************************** */
 
 /* Info-PH Section */
 #info-ph {
