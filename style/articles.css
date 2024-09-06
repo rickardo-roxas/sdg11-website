@@ -270,6 +270,10 @@
     width: 100%;
 }
 
+#info-ph .padded p{
+    margin-bottom: 1rem;
+}
+
 #info-ph .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -380,6 +384,10 @@
     padding: 5.1rem;
     width: 13.1rem;
     height: 13.1rem;
+}
+
+#news .padded p{
+    margin-bottom: 1rem;
 }
 
 #news a:hover {
@@ -541,5 +549,9 @@
 
     #info-ph .description {
         font-size: 0.8rem;
+    }
+
+    #info-ph .read {
+        background-color: var(--blue);
     }
 }
