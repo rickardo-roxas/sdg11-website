@@ -255,7 +255,7 @@
     width: 10rem;
     height: auto;
     object-fit: contain;
-    margin-right: 1rem;
+    margin-right: 0rem;
     flex-shrink: 0;
 }
 
@@ -324,9 +324,19 @@
 /* News Section */
 #news .card {
     border-radius: 1.5rem;
-    padding: 5.1rem;
+    padding: 5.8rem;
     width: 13.1rem;
+
     height: 13.1rem;
+}
+
+#news p {
+    text-align: justify;
+}
+
+#news a {
+    display: flex;
+    align-items: center;
 }
 
 #news a:hover {
@@ -334,37 +344,41 @@
     height: 13rem;
     padding: 5rem;
     box-shadow: var(--m3-dark3);
+    transition: width .5s;
 }
 
 #news a:hover .read p {
-    font-size: 0.8rem;
+    transition-delay: .4s;
     opacity: 1;
-    transition: all 0.3s ease;
+    transition: all 3s;
+    text-align: justify;
 }
-
 
 #news a:hover .read h3 {
-    font-size: 1rem;
+    transition-delay: 2s 2s;
     opacity: 1;
+    transition: all 3s;
 }
+
 
 #news img {
     border-radius: 0.8rem;
-    width: 11rem;
+    width: 8rem;
     height: auto;
     margin-left: -3rem;
-    padding-right: 2rem;
+    padding-right: 0rem;
 }
 
 #news .card p {
     font-weight: 700;
     margin-bottom: 0.5rem;
-    margin-right: -2.4rem;
+    margin-left: 3rem;
+    text-align: justify;
+
 }
 
 #news .card .read p {
-    font-size: 0.1rem;
-    text-align: left;
+    text-align: justify;
     font-weight: 500;
     opacity:0;
     color: var(--black);
@@ -375,6 +389,7 @@
 #news .card .read h3 {
     opacity: 0;
     pointer-events: none;
+    margin-left: 3rem;
 }
 
 #news .icon {
@@ -489,4 +504,58 @@
     #info-ph .description {
         font-size: 0.8rem;
     }
+
+    #news p {
+        margin-bottom: 2rem;
+    }
+
+    #news .container {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #news .card {
+        width: 50%;
+    }
+
+
+    #news a:hover img {
+        display: none;
+    }
+
+    #news a:hover {
+        width: 95%;
+        height: 13rem;
+        padding: 5rem;
+        box-shadow: var(--m3-dark3);
+        transition: width .5s;
+    }
+
+    #news .read p {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: .7rem;
+    
+    }
+    
+    #news .read h3 {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: .7rem;
+    }
+
+  
+    
+    
+
+
+    
+
+    
 }
