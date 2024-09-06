@@ -468,6 +468,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    
+    #info-ph .container {
+        grid-template-columns: 1fr;
+    }
+
     #info-ph .container {
         grid-template-columns: 1fr;
     }
