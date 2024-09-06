@@ -211,6 +211,27 @@
     height: 40rem;
 }
 
+
+.infographic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infographic {
+    width: 12rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius:.5rem;
+}
+
+.infographic:hover {
+    width: 40rem;
+    box-shadow: var(--m3-dark3);
+}
+
+
 /* Info-PH Section */
 #info-ph {
     padding: 2rem;
@@ -483,6 +504,18 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .infographic {
+        margin-left: 1rem;
+        margin-right: 0rem;
+        width: 20%;
+    }
+
+    .infographic:hover {
+        width: 80%;
+    }
+    
+    
     #info-ph .container {
         grid-template-columns: 1fr;
     }
@@ -496,6 +529,23 @@
         width: 8rem;
         height: 8rem;
     }
+
+    .first:hover {
+        box-shadow: none;
+        padding-left: 30%;
+    }
+
+    .second:hover {
+        box-shadow: none;
+        padding-left: 5%;
+    }
+
+    .fourth:hover {
+        box-shadow: none;
+        padding-right: 10%;
+    }
+
+
 
     #info-ph .title {
         font-size: 1rem;
@@ -549,13 +599,6 @@
         padding-right: 0%;
         font-size: .7rem;
     }
-
-  
-    
-    
-
-
-    
 
     
 }

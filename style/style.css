@@ -43,24 +43,6 @@ html {
     justify-content: center;
 }
 
-.infographic-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.infographic {
-    width: 12rem;
-    margin-left: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border-radius:.5rem;
-}
-
-.infographic:hover {
-    width: 40rem;
-    box-shadow: var(--m3-dark3);
-}
 
 .padded {
     padding: 3% 6%;
@@ -440,6 +422,8 @@ footer p {
     .sdg img {
         width: 85%;
     }
+
+
 }
 
 
