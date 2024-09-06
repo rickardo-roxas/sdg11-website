@@ -255,7 +255,7 @@
     width: 10rem;
     height: auto;
     object-fit: contain;
-    margin-right: 1rem;
+    margin-right: 0rem;
     flex-shrink: 0;
 }
 
@@ -324,9 +324,15 @@
 /* News Section */
 #news .card {
     border-radius: 1.5rem;
-    padding: 5.1rem;
+    padding: 5.8rem;
     width: 13.1rem;
+
     height: 13.1rem;
+}
+
+#news a {
+    display: flex;
+    align-items: center;
 }
 
 #news a:hover {
@@ -337,9 +343,13 @@
 }
 
 #news a:hover .read p {
-    font-size: 0.8rem;
     opacity: 1;
-    transition: all 0.3s ease;
+    transition: all 2s;
+}
+
+#news a:hover .read h3 {
+    opacity: 1;
+    transition: all 2s;
 }
 
 
@@ -350,21 +360,21 @@
 
 #news img {
     border-radius: 0.8rem;
-    width: 11rem;
+    width: 8rem;
     height: auto;
     margin-left: -3rem;
-    padding-right: 2rem;
+    padding-right: 0rem;
 }
 
 #news .card p {
     font-weight: 700;
     margin-bottom: 0.5rem;
-    margin-right: -2.4rem;
+    margin-left: 3rem;
+
 }
 
 #news .card .read p {
-    font-size: 0.1rem;
-    text-align: left;
+    text-align: justify;
     font-weight: 500;
     opacity:0;
     color: var(--black);
@@ -375,6 +385,7 @@
 #news .card .read h3 {
     opacity: 0;
     pointer-events: none;
+    margin-left: 3rem;
 }
 
 #news .icon {
