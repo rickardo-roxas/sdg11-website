@@ -49,6 +49,42 @@
     margin-right: 0.5rem;
 }
 
+@media screen and (max-width: 768px) {
+    .articles-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 0.5rem;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .articles-nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .articles-nav li {
+        font-size: 0;
+    }
+
+    .articles-nav li a {
+        padding: 0.2rem;
+    }
+
+    .articles-nav .icon {
+        width: 1.8rem;
+    }
+}
+
 .articles-content {
     padding-top: 20%;
     margin-top: -20%;
