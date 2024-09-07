@@ -352,7 +352,7 @@ footer p {
         padding: 0.5rem;
         border-radius: 0.5rem;
         color: white;
-        box-shadow: var(--yellow);
+        box-shadow: var(--m3-dark1);
     }
 
     nav a:hover {
@@ -360,7 +360,7 @@ footer p {
         padding: 0.3rem;
         border-radius: 0.5rem;
         color: white;
-        box-shadow: var(--yellow);
+        box-shadow: var(--m3-dark3);
     }
 
     nav a {
@@ -484,7 +484,7 @@ footer p {
     }
 
     #info .targets .card .ball {
-        background-color: var(--yellow); !important;
+        background-color: var(--yellow);
     }
 }
 

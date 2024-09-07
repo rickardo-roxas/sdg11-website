@@ -219,7 +219,7 @@
     z-index: 2;
 }
 
-#info .targets .card h1 {
+#info .targets .card h3 {
     font-size: 1rem;
     color:white;
 }
@@ -364,7 +364,7 @@
     z-index: 2;
 }
 
-#info1 .targets .card h1 {
+#info1 .targets .card h3 {
     font-size: 1rem;
     color:white;
 }
