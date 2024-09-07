@@ -171,6 +171,7 @@
     place-items: center;
 }
 
+
 #info .targets .content {
     width: 20rem;
     margin-top: -1.5rem;
@@ -557,7 +558,7 @@
 }
 
 #news a:hover .read h3 {
-    transition-delay: 2s 2s;
+    transition-delay: 2s;
     opacity: 1;
     transition: all 3s;
 }
@@ -689,7 +690,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    
+
+    #news .card .read h3 {
+        margin-left: 0rem;
+    }
+
+    #news img {
+        margin-left: -4rem;
+    }
+
+
     #info-ph .container {
         grid-template-columns: 1fr;
     }
@@ -784,4 +794,8 @@
     .sdg11 {
         display: block;
     }
+
+
+
+    /* Research and Pubs */
 }
