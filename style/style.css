@@ -40,7 +40,11 @@ html {
 .container {
     display: flex;
     align-items: center;
+}
+
+#news .container {
     justify-content: center;
+
 }
 
 .infographic-container {
