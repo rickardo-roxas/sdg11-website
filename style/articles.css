@@ -264,7 +264,7 @@
     height: 40rem;
 }
 
-#info1 h3 {
+#info1 h2 {
     font-size: 4rem;
     padding-top: 2rem;
 }
@@ -283,7 +283,7 @@
     width: 40rem;
 }
 
-#info1 p, #info1 h3, #info1 h2 {
+#info1 p, #info1 h2 {
     margin: 1rem 2rem;
     text-align: left;
     white-space: normal;
@@ -297,7 +297,7 @@
     font-size: 0.8rem;
 }
 
-#info1 .targets h3 {
+#info1 .targets h2 {
     font-size: 1rem;
 }
 
