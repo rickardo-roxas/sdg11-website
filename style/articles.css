@@ -786,6 +786,7 @@
     }
     #info p{
         margin: auto;
+        text-align: justify;
     }
     .hide-h3 {
         display: none;
@@ -795,7 +796,49 @@
         display: block;
     }
 
+    /* Research and Pubs mobile ****************** */
+    #pubs a {
+        flex: 1 1 45%;
+        min-width: 22rem;
+        max-width: 24rem;
+        height: auto;
+        margin: 0.5rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
 
+    #pubs a:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-    /* Research and Pubs */
+    #pubs .card p {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+    }
+
+    #pubs .read p {
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    #pubs .icon {
+        padding: 0.6rem 1.2rem;
+        border-radius: 1rem;
+        font-size: 0.85rem;
+        margin-top: 0.8rem;
+    }
+    #pubs h2{
+        text-align: center;
+    }
+    #pubs .discover{
+        display: none;
+    }
+
+    #pubs .container {
+        gap: 0.3rem;
+        justify-content: center;
+    }
+
+    /* ******************************************* */
 }
