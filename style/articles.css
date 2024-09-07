@@ -210,7 +210,6 @@
 }
 
 #info .targets .card .ball {
-    background-color: var(--dark-blue);
     border-radius: 1.5rem;
     width: 5rem;
     height: 3rem;
@@ -458,7 +457,7 @@
     width: 10rem;
     height: auto;
     object-fit: contain;
-    margin-right: 0rem;
+    margin-right: 0;
     flex-shrink: 0;
 }
 
@@ -569,7 +568,7 @@
     width: 8rem;
     height: auto;
     margin-left: -3rem;
-    padding-right: 0rem;
+    padding-right: 0;
 }
 
 #news .card p {
@@ -691,7 +690,7 @@
 
 @media screen and (max-width: 768px) {
     #news .card .read h3 {
-        margin-left: 0rem;
+        margin-left: 0;
     }
 
     #news img {
@@ -771,19 +770,19 @@
     }
 
     #news .read p {
-        margin-left: 0%;
-        margin-right: 0%;
-        padding-left: 0%;
-        padding-right: 0%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
         font-size: .7rem;
     
     }
     
     #news .read h3 {
-        margin-left: 0%;
-        margin-right: 0%;
-        padding-left: 0%;
-        padding-right: 0%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
         font-size: .7rem;
     }
 
@@ -847,6 +846,7 @@
     #pubs h2{
         text-align: center;
     }
+
     #pubs .discover{
         display: none;
     }
@@ -863,5 +863,14 @@
 
     .articles-footer {
         margin-bottom: 5rem;
+    }
+
+    .back {
+        background-color: var(--blue);
+    }
+
+    #info1 .targets .card .ball {
+        background-color: var(--yellow);
+
     }
 }

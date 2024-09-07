@@ -479,8 +479,12 @@ footer p {
         color: white;
     }
 
-    .main-description h2{
+    .main-description h2 {
         color: white;
+    }
+
+    #info .targets .card .ball {
+        background-color: var(--yellow); !important;
     }
 }
 
