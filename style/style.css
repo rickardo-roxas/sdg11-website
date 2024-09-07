@@ -475,7 +475,13 @@ footer p {
         margin-right: 90%;
     }
 
-    
+    footer p {
+        color: white;
+    }
+
+    .main-description h2{
+        color: white;
+    }
 }
 
 

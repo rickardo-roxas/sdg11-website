@@ -690,7 +690,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
     #news .card .read h3 {
         margin-left: 0rem;
     }
@@ -699,6 +698,9 @@
         margin-left: -4rem;
     }
 
+    #info1 h3 {
+        text-align: center;
+    }
 
     #info-ph .container {
         grid-template-columns: 1fr;
@@ -726,7 +728,21 @@
         font-size: 0.8rem;
     }
 
+    #info-ph h2 {
+        text-align: center;
+    }
+
+    #info-ph .learn-more {
+        display: none;
+    }
+
+    #news h2 {
+        padding: 0 1rem;
+        text-align: center;
+    }
+
     #news p {
+        display: none;
         margin-bottom: 2rem;
     }
 
@@ -796,7 +812,7 @@
         display: block;
     }
 
-    /* Research and Pubs mobile ****************** */
+    /* Research and Pubs */
     #pubs a {
         flex: 1 1 45%;
         min-width: 22rem;
@@ -840,5 +856,12 @@
         justify-content: center;
     }
 
-    /* ******************************************* */
+    #references {
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .articles-footer {
+        margin-bottom: 5rem;
+    }
 }
