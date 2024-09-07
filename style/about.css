@@ -96,8 +96,16 @@
     letter-spacing: -0.03rem;
 }
 
+.about-us-footer {
+    margin-top: 10rem;
+}
+
 @media screen and (max-width: 768px) {
     /* About Us */
+    .about-us {
+        background-color: var(--blue);
+    }
+
     .main-description p {
         display: none;
     }
@@ -175,5 +183,10 @@
         margin-right: 1rem;
         box-shadow: none;
         padding: 0.3rem;
+    }
+
+    .about-us-footer {
+        margin-top: -1rem;
+        background-color: var(--blue);
     }
 }
