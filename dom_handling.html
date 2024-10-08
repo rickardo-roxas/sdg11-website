@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TANK, Rithik</title>
+
+        <style>
+            #getSDG {
+                background-color: rgb(51, 102, 153, 1);
+                color: beige;
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                border-radius: 20%;
+                font-weight: bold;
+                font-size: large;
+            }
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            @font-face {
+                font-family: 'Montserrat';
+                src: url(../style/font/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+            }
+
+            #getSDG:hover {
+                background-color: beige;
+                color:rgb(51, 102, 153, 1);
+            }
+
+        </style>
+    </head>
+    <body>
+            <button id = "getSDG">Click me</button>
+
+            <noscript>
+                JavaScript is not supported, Boo Hoo!
+            </noscript>
+
+            <script>
+                var button = document.getElementsByTagName("button")[0];
+                button.onclick=showSDG;
+                
+
+                function showSDG() {
+                    console.log("Button Clicked");
+
+                    var paragraph = document.createElement('p');
+                    paragraph.innerHTML = "test";
+                    document.body.display="grid";
+                    document.body.insertBefore(paragraph, button);
+                }
+            </script>
+    </body>
+
+
+</html>

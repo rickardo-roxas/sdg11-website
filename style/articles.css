@@ -39,6 +39,14 @@
     transform: scale(1.05);
 }
 
+html main > div img[alt="News icon"] + p {
+    color: red;
+}
+
+a[href="#news"] .container > .icon + p {
+    color: forestgreen;
+}
+
 .articles-nav a:active {
     box-shadow: var(--m3-dark5);
     transform: scale(1.05);
